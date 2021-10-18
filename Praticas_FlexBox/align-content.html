@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Fundamentos - Align content</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+        
+        .item {
+            background-color: orangered;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        
+        .center {
+            align-content: center;
+        }
+        
+        .flex-start {
+            align-content: flex-start;
+        }
+        
+        .flex-end {
+            align-content: flex-end;
+        }
+        
+        .space-around {
+            align-content: space-around;
+        }
+        
+        .space-between {
+            align-content: space-between;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Comportamento padrão strech</p>
+    <div class="container">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+    </div>
+
+    <br>
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+    </div>
+
+    <br>
+    <p>flex-start</p>
+    <div class="container flex-start">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+    </div>
+
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+    </div>
+
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem </div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem ipsu</div>
+        <div class="item">Lorem ipsuLorem ipsuLorem</div>
+        <div class="item">Lorem ipsuLorem ipsu</div>
+    </div>
+
+
+
+</body>
+
+</html>
